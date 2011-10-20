@@ -1,4 +1,14 @@
 Learnopenly::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  root :to => "courses#index"
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  resources :units
+
+  resources :courses
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

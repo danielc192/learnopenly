@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Learnopenly</title>
+  <title>Learn Openly - <%= yield(:title) || "Where Learning Happens" %></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
