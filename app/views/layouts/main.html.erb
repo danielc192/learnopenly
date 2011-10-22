@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Learn Openly - <%= yield(:title) || "Where Learning Happens" %></title>
+	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+	<%= stylesheet_link_tag :defaults, "main", "blueprint/screen.css", "blueprint/print.css" %>
+</head>
+<body style="background:#eee;">
+<div id="container">
+
+<div id="header" class="span-6">
+<span class="title">LearnOpenly</span>
+</div>
+
+
+<div id="content" class="span-24 last">
+<%= yield %>
+</div>
+
+<div id="footer" class="span-24 last">
+</div>
+
+</div>
+</body>
+</HTML>
